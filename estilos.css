@@ -1,0 +1,111 @@
+.modalPos {
+  margin-top: 150px;
+}
+.secHei {
+  height: 650px;
+}
+.imgOutBound {
+  align-self: center;
+  justify-content: center;
+  height: 555px;
+  width: 400px;
+}
+.story-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff00;
+  padding: 0;
+  height: 550px;
+  width: 350px;
+}
+.story-box4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff00;
+  padding: 0;
+  height: 250px;
+  width: 400px;
+}
+
+.gradiente {
+  background: linear-gradient(
+    324deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 9%,
+    rgba(0, 212, 255, 1) 56%
+  );
+}
+.swipe-up {
+  height: 550px;
+  width: 380px;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.other-box {
+  background-color: #4ff00a00;
+  height: 70px;
+  margin: 2%;
+  width: 90%;
+}
+.story-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: #ffffff00;
+  margin-left: 15px;
+  padding: 0;
+  height: 150px;
+  width: 350px;
+}
+.story-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  background-color: #ffffff00;
+  margin-left: 15px;
+  padding: 0;
+  height: 150px;
+  width: 350px;
+}
+
+/* LETRAS */
+.brand {
+  font-weight: bold;
+  color: #007bff;
+  font-size: x-large;
+}
+.titulo {
+  font-weight: bolder;
+  color: #007bff;
+  font-size: xx-large;
+}
+.letra {
+  color: #007bff;
+  margin-bottom: 0rem;
+}
+.letrasm {
+  font-size: small;
+  color: #007bff;
+  margin-bottom: 0rem;
+}
+/* MODAL */
+.modx {
+  background-color: #ffffffb3;
+}
+.modx2 {
+  background-color: #ffffff00;
+  border-color: #ffffff00;
+}
+.bgcolor {
+  background-color: white;
+}
+.icons {
+  width: 14%;
+}

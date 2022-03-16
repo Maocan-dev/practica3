@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 3</title>
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap.min.css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="./estilos.css" media="screen" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <section>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light"
+        style="background-color: rgba(255, 255, 255, 0.6)"
+      >
+        <div class="container-fluid">
+          <span class="mb-0 h1 brand">Vaccination</span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="nav nav-pills ms-auto mb-2 mb-lg-0"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Database
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Education
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  News
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Regulation
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  HoaxBuster
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </nav>
+      <!-- FIN NAVBAR -->
+    </section>
+    <!-- INICIA SECCION 1 -->
+    <section>
+      <section class="row">
+        <div class="card-body story-box">
+          <h1 class="titulo">Fight Virus</h1>
+          <h1 class="titulo">With Vaccines</h1>
+          <span class="letra"
+            >Let´s stop this pandemic by killing the virus</span
+          >
+          <span class="letra">with a vaccine, don't let yourself and your</span>
+          <span class="letra"><p>family get infected</p></span>
+          <div class="d-flex flex-row bd-highlight mb-2 letrasm">
+            <div class="p-4 bd-highlight">
+              <img src="./assets/icons/shield2.svg" /> Best protection
+            </div>
+            <div class="p-4 bd-highlight">
+              <img src="./assets/icons/star2.svg" />Selected vaccines
+            </div>
+          </div>
+          <!-- MODAL SECTION -->
+          <section>
+            <!-- Link to Open the Modal -->
+            <a
+              href="#myModal"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+              style="text-decoration: none"
+              ><img src="./assets/icons/clock.svg" /> Schedule your
+              vaccinations</a
+            >
+
+            <!-- The Modal -->
+            <div class="modal modalPos" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content modx">
+                  <!-- Modal body -->
+                  <div
+                    class="d-flex justify-content-center bd-highlight mb-3 letrasm"
+                  >
+                    <div class="p-2 flex-fill bd-highlight">
+                      <img src="./assets/icons/location.svg" />Location
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                      <img src="./assets/icons/calendar.svg" />Date
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                      <img src="./assets/icons/pencil.svg" />Vaccine Type
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-center bd-highlight mb-3 letrasm"
+                  >
+                    <div class="p-2 flex-fill bd-highlight">
+                      <select name="location" id="location">
+                        <option value="alabama ">Alabama (AL)</option>
+                        <option value="alaska ">Alaska (AK)</option>
+                        <option value="arizona ">Arizona (AZ)</option>
+                        <option value="arkansas ">Arkansas (AR)</option>
+                        <option value="california ">California (CA)</option>
+                        <option value="carolina del norte ">
+                          Carolina del Norte (NC)
+                        </option>
+                        <option value="carolina del sur ">
+                          Carolina del Sur (SC)
+                        </option>
+                        <option value="colorado ">Colorado (CO)</option>
+                        <option value="connecticut ">Connecticut (CT)</option>
+                        <option value="dakota del norte ">
+                          Dakota del Norte (ND)
+                        </option>
+                        <option value="dakota del sur ">
+                          Dakota del Sur (SD)
+                        </option>
+                        <option value="delaware ">Delaware (DE)</option>
+                        <option value="florida ">Florida (FL)</option>
+                        <option value="georgia ">Georgia (GA)</option>
+                        <option value="hawái ">Hawái (HI)</option>
+                        <option value="idaho ">Idaho (ID)</option>
+                        <option value="illinois ">Illinois (IL)</option>
+                        <option value="indiana ">Indiana (IN)</option>
+                        <option value="iowa ">Iowa (IA)</option>
+                        <option value="kansas ">Kansas (KS)</option>
+                        <option value="kentucky ">Kentucky (KY)</option>
+                        <option value="luisiana ">Luisiana (LA)</option>
+                        <option value="maine ">Maine (ME)</option>
+                        <option value="maryland ">Maryland (MD)</option>
+                        <option value="massachusetts ">
+                          Massachusetts (MA)
+                        </option>
+                        <option value="míchigan ">Míchigan (MI)</option>
+                        <option value="minnesota ">Minnesota (MN)</option>
+                        <option value="misisipi ">Misisipi (MS)</option>
+                        <option value="misuri ">Misuri (MO)</option>
+                        <option value="montana ">Montana (MT)</option>
+                        <option value="nebraska ">Nebraska (NE)</option>
+                        <option value="nevada ">Nevada (NV)</option>
+                        <option value="nueva jersey ">Nueva Jersey (NJ)</option>
+                        <option value="nueva york ">Nueva York (NY)</option>
+                        <option value="nuevo hampshire ">
+                          Nuevo Hampshire (NH)
+                        </option>
+                        <option value="nuevo méxico ">Nuevo México (NM)</option>
+                        <option value="ohio ">Ohio (OH)</option>
+                        <option value="oklahoma ">Oklahoma (OK)</option>
+                        <option value="oregón ">Oregón (OR)</option>
+                        <option value="pensilvania ">Pensilvania (PA)</option>
+                        <option value="rhode island ">Rhode Island (RI)</option>
+                        <option value="tennessee ">Tennessee (TN)</option>
+                        <option value="texas ">Texas (TX)</option>
+                        <option value="utah ">Utah (UT)</option>
+                        <option value="vermont ">Vermont (VT)</option>
+                        <option value="virginia ">Virginia (VA)</option>
+                        <option value="virginia occidental ">
+                          Virginia Occidental (WV)
+                        </option>
+                        <option value="washington ">Washington (WA)</option>
+                        <option value="wisconsin ">Wisconsin (WI)</option>
+                        <option value="wyoming ">Wyoming (WY)</option>
+                      </select>
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                      <input type="date" />
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight">
+                      <select name="vaccine">
+                        <option value="astra">AstraZeneca</option>
+                        <option value="sino">Sinovac</option>
+                        <option value="pfizer">Pfizer</option>
+                        <option value="moderna">Moderna</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="card-body story-box bg-primary text-center gradiente">
+          <img class="swipe-up" src="./assets/Images/Docvac2.png" />
+        </div>
+      </section>
+    </section>
+    <!-- INICIA SECCION LOGOS -->
+    <section class="d-flex bd-highlight bgcolor">
+      <div class="p-2 flex-fill bd-highlight">
+        <img
+          src="./assets/Images/azlogo.png"
+          class="img-fluid"
+          alt="astraZeneca"
+        />
+      </div>
+      <div class="p-2 flex-fill bd-highlight">
+        <img
+          src="./assets/Images/sinologo.png"
+          class="img-fluid"
+          alt="astraZeneca"
+        />
+      </div>
+      <div class="p-2 flex-fill bd-highlight">
+        <img
+          src="./assets/Images/pflogo.png"
+          class="img-fluid"
+          alt="astraZeneca"
+        />
+      </div>
+      <div class="p-2 flex-fill bd-highlight">
+        <img
+          src="./assets/Images/modlogo.png"
+          class="img-fluid"
+          alt="astraZeneca"
+        />
+      </div>
+    </section>
+    <!-- INICIA SECCION 2 -->
+    <section class="d-flex">
+      <div class="story-box2">
+        <h5 class="titulo">Why should i vaccine?</h5>
+        <p class="letra">
+          In order to avoid any doubts about getting the COVID-19 vaccine,
+          identify the following 4 benefits of COVID-19 vaccination:
+        </p>
+      </div>
+    </section>
+    <!-- INICIA SECCION CARDS 1 -->
+    <section class="flex-container justify-content-center row">
+      <div class="card modx2" style="width: 18rem">
+        <img
+          src="./assets/icons/coronavirus.svg"
+          class="card-img-top icons"
+          alt="minimize"
+        />
+        <div class="card-body text-primary modx2">
+          <h5 class="card-title">Minimize the spread of viruses</h5>
+          <p class="card-text">
+            Vaccine has been proven effective to prevent someone from getting
+            infected with Coronavirus.
+          </p>
+        </div>
+      </div>
+      <div class="card modx2" style="width: 18rem">
+        <img
+          src="./assets/icons/escudocruz.svg"
+          class="card-img-top icons"
+          alt="minimize"
+        />
+        <div class="card-body text-primary modx2">
+          <h5 class="card-title">Forming antibodies</h5>
+          <p class="card-text letra">
+            COVID-19 vaccine proven to help shape antibody response from immune
+            system.
+          </p>
+        </div>
+      </div>
+      <div class="card modx2" style="width: 18rem">
+        <img
+          src="./assets/icons/mask.svg"
+          class="card-img-top icons"
+          alt="minimize"
+        />
+        <div class="card-body text-primary modx2">
+          <h5 class="card-title">Protecting people nerby</h5>
+          <p class="card-text letra">
+            The benefits of COVID-19 vaccination are the vaccine that we get can
+            also help protect people around us.
+          </p>
+        </div>
+      </div>
+      <div class="card modx2" style="width: 18rem">
+        <img
+          src="./assets/icons/people.svg"
+          class="card-img-top icons"
+          alt="minimize"
+        />
+        <div class="card-body text-primary modx2">
+          <h5 class="card-title">Creating group immunity</h5>
+          <p class="card-text letra">
+            COVID-19 vaccination is also beneficial for creating group immunity
+            or herd immunity.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- INICIA SECCION 3 -->
+    <section class="flex-container justify-content-center row">
+      <div class="container">
+        <div class="row">
+          <div class="card-body story-box3" style="height: fit-content"></div>
+          <div
+            class="card-body story-box2"
+            style="
+              justify-content: flex-start;
+              text-align: center;
+              height: 310px;
+            "
+          >
+            <h5 class="titulo">Preparations Before Vaccine</h5>
+            <p class="letra">
+              The success of vaccines is strongly influenced by the strength of
+              the body's immune system. Therefore, there are several things that
+              can ve tried to make the COVID-19 vaccine work:
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-body story-box4 gradiente">
+            <img
+              class="img-fluid"
+              src="./assets/Images/Doctorchecking3ok.png"
+            />
+          </div>
+          <div class="card-body story-box3" style="height: fit-content">
+            <!-- BOTONES TOGGLE -->
+            <div class="card border-light mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/icons/noshield.svg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Avoid alcoholic beverages</h5>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <input
+                    type="image"
+                    src="./assets/icons/arrowdown.svg"
+                    class="img-fluid rounded-start"
+                    data-bs-toggle="collapse"
+                    href="#multiCollapseExample1"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample1"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="collapse multi-collapse"
+                    id="multiCollapseExample1"
+                  >
+                    <div class="card card-body">
+                      Some placeholder content for the first collapse component
+                      of this multi-collapse example. This panel is hidden by
+                      default but revealed when the user activates the relevant
+                      trigger.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/icons/flash.svg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Avoid stress</h5>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <input
+                    type="image"
+                    src="./assets/icons/arrowdown.svg"
+                    class="img-fluid rounded-start"
+                    data-bs-toggle="collapse"
+                    href="#stress"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="stress"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="stress">
+                    <div class="card card-body">
+                      Stress has a profound effect on immune work. Moreover,
+                      prolonged stress can increase cortisol production and
+                      oxidative stress in the body.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/icons/food.svg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Eat healthy food</h5>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <input
+                    type="image"
+                    src="./assets/icons/arrowdown.svg"
+                    class="img-fluid rounded-start"
+                    data-bs-toggle="collapse"
+                    href="#food"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="food"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="food">
+                    <div class="card card-body">
+                      Some placeholder content for the first collapse component
+                      of this multi-collapse example. This panel is hidden by
+                      default but revealed when the user activates the relevant
+                      trigger.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/icons/sleep.svg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Get enough sleep</h5>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <input
+                    type="image"
+                    src="./assets/icons/arrowdown.svg"
+                    class="img-fluid rounded-start"
+                    data-bs-toggle="collapse"
+                    href="#sleep"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="sleep"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="sleep">
+                    <div class="card card-body">
+                      Some placeholder content for the first collapse component
+                      of this multi-collapse example. This panel is hidden by
+                      default but revealed when the user activates the relevant
+                      trigger.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-2">
+                  <img
+                    src="./assets/icons/basketball.svg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Exercise or physical activity</h5>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <input
+                    type="image"
+                    src="./assets/icons/arrowdown.svg"
+                    class="img-fluid rounded-start"
+                    data-bs-toggle="collapse"
+                    href="#excercise"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="excercise"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="excercise">
+                    <div class="card card-body">
+                      Some placeholder content for the first collapse component
+                      of this multi-collapse example. This panel is hidden by
+                      default but revealed when the user activates the relevant
+                      trigger.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SCRIPT -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
